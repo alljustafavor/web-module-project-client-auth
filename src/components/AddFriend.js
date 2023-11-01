@@ -24,9 +24,6 @@ export class AddFriend extends React.Component {
         e.preventDefault();
         axiosWithAuth()
             .post('http://localhost:9000/api/friends', this.state.friend)
-            .then((res) => {
-                console.log(res)
-            })
             .catch((err) => {
                 console.log(err)
             });
